@@ -1033,7 +1033,10 @@ class FilterController extends Controller
             $table = $table->where('team_id', '=', $convert_to_array[2]);
         }
 
-        return $table->whereIn('tickets.status', getStatusArray($convert_to_array[3]));
+        $table->whereIn('tickets.status', getStatusArray($convert_to_array[3]));
+
+        //paginate
+        return $table->paginate(10);
     }
 
     /**

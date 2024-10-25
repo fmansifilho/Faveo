@@ -84,8 +84,11 @@ $path = public_path();
                     }
                 },
                 "lengthMenu": [[10, 25, 50, 100, 500], [10, 25, 50, 100, 500]],
+                "serverSide": true,
+                "processing": true,
                 "ajax": {
                     url: "{{url('get-filtered-tickets')}}",
+                    async: true,
                     data: function (d) {
                         d.options = "{{$inputs}}";
                     }
