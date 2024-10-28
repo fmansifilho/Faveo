@@ -2779,7 +2779,12 @@ class TicketController extends Controller
                             }
 
                             $due = '';
-                            if ($tickets->duedate != null) {
+                            $ticket_db_data = \App\Model\helpdesk\Ticket\Tickets::where('id', $tickets->id)->first();
+                            $ticket_is_closed = false;
+                            if($ticket_db_data){
+                                if($ticket_db_data->closed == 1) $ticket_is_closed = true;
+                            }
+                            if ($tickets->duedate != null && !$ticket_is_closed) {
                                 $now = strtotime(\Carbon\Carbon::now()->tz(timezone()));
                                 $duedate = strtotime($tickets->duedate);
 
