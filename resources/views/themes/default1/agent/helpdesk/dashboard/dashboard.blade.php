@@ -12,6 +12,14 @@ class="nav-link active"
 <h1>{!! Lang::get('lang.dashboard_reports') !!}</h1>
 @stop
 
+@section('breadcrumb')
+<ol class="breadcrumb float-sm-right ">
+	<li class="breadcrumb-item"> <i class="fas fa-home"> </i> {!! Lang::get('lang.you_are_here') !!} : &nbsp;</li>
+
+	<li><a href="{!! URL::route('dashboard') !!}">{!! Lang::get('lang.dashboard') !!}</a></li>
+</ol>
+@stop
+
 @section('dashboard')
 class="nav-item d-none d-sm-inline-block active"
 @stop

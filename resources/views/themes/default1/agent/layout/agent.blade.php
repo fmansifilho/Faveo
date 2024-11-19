@@ -602,7 +602,9 @@
                       </div><!-- /.col -->
                       <div class="col-sm-6">
 
-                        {!! Breadcrumbs::render() !!}
+                        {{-- {!! Breadcrumbs::render() !!} --}}
+
+                        @yield('breadcrumb')
                       </div><!-- /.col -->
                     </div><!-- /.row -->
                   </div><!-- /.container-fluid -->
