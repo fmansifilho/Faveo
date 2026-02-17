@@ -93,19 +93,34 @@ git clone https://github.com/fmansifilho/Faveo.git
 cd Faveo
 ```
 
-### 2. Install PHP Dependencies
+### 2. Validate Your Environment (Optional but Recommended)
+
+Run the environment checker to ensure your system meets all requirements:
+
+```bash
+php dev-check.php
+```
+
+This script will check:
+- PHP version and required extensions
+- Composer, Node.js, NPM, and Git installation
+- Directory permissions
+- Dependency installation status
+- Environment configuration
+
+### 3. Install PHP Dependencies
 
 ```bash
 composer install
 ```
 
-### 3. Install Node Dependencies
+### 4. Install Node Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Environment Configuration
+### 5. Environment Configuration
 
 Copy the example environment file and configure it:
 
@@ -137,25 +152,25 @@ MAIL_HOST=mailhog
 MAIL_PORT=1025
 ```
 
-### 5. Generate Application Key
+### 6. Generate Application Key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6. Run Migrations
+### 7. Run Migrations
 
 ```bash
 php artisan migrate
 ```
 
-### 7. Seed the Database (Optional)
+### 8. Seed the Database (Optional)
 
 ```bash
 php artisan db:seed
 ```
 
-### 8. Build Frontend Assets
+### 9. Build Frontend Assets
 
 For development:
 ```bash
@@ -172,7 +187,7 @@ Watch for changes during development:
 npm run watch
 ```
 
-### 9. Start Development Server
+### 10. Start Development Server
 
 ```bash
 php artisan serve
@@ -180,7 +195,7 @@ php artisan serve
 
 The application will be available at `http://localhost:8000`
 
-### 10. Configure Pretty URLs
+### 11. Configure Pretty URLs
 
 Ensure your web server is configured for pretty URLs (mod_rewrite for Apache).
 
