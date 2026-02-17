@@ -89,8 +89,8 @@ Faveo follows Laravel's MVC pattern:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/fmansifilho/Faveo.git
-cd Faveo
+git clone https://github.com/ladybirdweb/faveo-helpdesk.git
+cd faveo-helpdesk
 ```
 
 ### 2. Validate Your Environment (Optional but Recommended)

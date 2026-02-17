@@ -102,8 +102,8 @@ Are you a full-stack developer looking to contribute or extend Faveo? Check out 
 
 **Quick Start for Developers:**
 ```bash
-git clone https://github.com/fmansifilho/Faveo.git
-cd Faveo
+git clone https://github.com/ladybirdweb/faveo-helpdesk.git
+cd faveo-helpdesk
 composer install
 npm install
 cp .env.example .env

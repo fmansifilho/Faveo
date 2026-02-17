@@ -22,7 +22,7 @@ $success = [];
 // Check PHP Version
 echo "Checking PHP version...\n";
 $phpVersion = PHP_VERSION;
-$minPhpVersion = '8.1.0';
+$minPhpVersion = '8.1';
 if (version_compare($phpVersion, $minPhpVersion, '>=')) {
     $success[] = "✓ PHP version $phpVersion (>= $minPhpVersion required)";
 } else {
