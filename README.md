@@ -35,6 +35,7 @@ Faveo Documentation
   * <a href="https://github.com/ladybirdweb/faveo-helpdesk/wiki/API-Documentation" target="_blank">Faveo API Documentation</a>
   * <a href="https://github.com/ladybirdweb/faveo-helpdesk/wiki/Faveo-Event-List" target="_blank">Faveo Event List</a>
   * <a href="https://github.com/ladybirdweb/faveo-helpdesk/wiki/Faveo-Plugin-creation-guide" target="_blank">Faveo Plugin creation guide</a>
+  * **[Developer Guide](DEVELOPER_GUIDE.md)** - Comprehensive guide for full-stack developers
 
 Requirements
 --------------------------
@@ -85,6 +86,32 @@ Language translate
 --------------------------
 Help us translate Faveo into your native language <a href="https://github.com/ladybirdweb/faveo-helpdesk/wiki/Help-in-language-translate" target="_blank">Click here</a><br/>
 We are following Laravel <a href="https://laravel.com/docs/9.x/localization">localization</a> module, you can create language file in your branch and send a pull request.
+
+For Developers
+--------------------------
+Are you a full-stack developer looking to contribute or extend Faveo? Check out our comprehensive **[Developer Guide](DEVELOPER_GUIDE.md)** which includes:
+
+  * **Development Environment Setup** - Get up and running quickly with step-by-step instructions
+  * **Architecture Overview** - Understand the Laravel-based MVC structure, API design, and plugin system
+  * **Development Workflow** - Learn about git-flow, testing, and best practices
+  * **API Development** - Build and extend RESTful APIs (v1 & v2)
+  * **Frontend Development** - Work with Laravel Blade, Vue.js, and Laravel Mix
+  * **Database Management** - Migrations, models, relationships, and query optimization
+  * **Plugin Development** - Create custom plugins to extend functionality
+  * **Testing & Debugging** - PHPUnit, Laravel Dusk, Debugbar, and more
+
+**Quick Start for Developers:**
+```bash
+git clone https://github.com/ladybirdweb/faveo-helpdesk.git
+cd faveo-helpdesk
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+npm run dev
+php artisan serve
+```
 
 Contributing
 --------------------------
